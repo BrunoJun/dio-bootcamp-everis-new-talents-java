@@ -1,0 +1,108 @@
+Aula 1
+
+- Serviços Web (Web services) são soluções para aplicações se comunicarem independentes da linguagem, software e hardware.
+
+- Inicialmente os Serviços web foram criados para troca de mensagens usando a linguagem XML, que é um linguagem de marcação, sobre o protocolo HTTP se identificado
+por URI, que seria uma URL mais completa.
+
+- Os Serviços Web pode se dizer que são API's que se comunicam por meio de redes sobre o protocolo HTTP.
+
+- O Web Service pode ser usado como um intermediador entre duas aplicações, onde uma delas pode acessar algumas informações no banco de dados da outra por meio do
+Serviço Web, sendo que a solução pode ter restrições de acesso as informações, causando segurança para a aplicação que possui o banco de dados.
+
+- Vantagens de se usar um Web Service:
+
+	- Linguagem comum: quando duas aplicações que utilizam linguagens de programação diferentes precisam se comunicar os serviços web utiliza uma linguagem
+	comum entre as duas para realizar o processo, como, o xml e o json.
+
+	- Integração: facilidade de comunicação entre aplicações.
+
+	- Reutilização de implementação: como o retorno é o mesmo sempre, o web service pode ser reutilizado.
+
+	- Segurança: os web services podem filtrar acesso e informações para os outros.
+
+	- Custos: o web service reduz o custo de criar diferentes soluções para diferentes cenários.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 2
+
+- SOAP (Simple object access protocol), é um protocolo baseado em XML para acessar serviços web, principalmente por HTTP, ou seja, como os serviços web se comunicam.
+facilitando a integração entre elas.
+
+- Vantagem de usar o SOAP:
+
+	- Integração: consegue integrar aplicações independente das linguagens, pois usa uma linguaguem em comum, o XML.
+
+	- Meio de transporte genérico: pode ser usado outros protocolos, alem do HTTP.
+
+- O XML (Extensible Markup Language), é uma linguagem de marcação que facilita a separação dos conteúdos por meio das tags, não tem limitação de tags.
+
+- Existe uma estrutura padrão para o envio de mensagens XML, que seria a SOAP MESSAGE:
+
+	- SOAP Envelope, que seria a estrutura principal que abrange a SOAP Header e a SOAP Body. Alem de encapsular toda a mensagem SOAP.
+
+	- SOAP Header, é onde apresenta os atributos e metadados da requisição, por exemplo, o DNS, IP de origem, etc.
+
+	- SOAP Body, é o elemento que comtém os detalhes da mensagem.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 3
+
+- WSDL (Web Service Description Language), basicamente ele é um contrato que diz como o web service funciona, sendo que essa descrição é feita em XML.
+
+- XSD (XML Schema Definition), o schema é no formato XML usado para definir a estrutura de dados que será validada no XML
+
+- O XSD funciona basicamente como uma documentação de como deve ser montado o SOAP MESSAGE que será enviado através de Web Service.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 4 
+
+- REST (Representational State Transfer), é um estilo de arquitetura que define a implementação de um Serviço web.
+
+- Vantagens de usar o REST:
+
+	- Permite a integração entre aplicações e também entre cliente e servidor em páginas Web e aplicações.
+
+	- Utilza os métodos HTTP para definir as operações que está sendo efetuada.
+
+	- Arquitetura de fácil compreenssão.
+
+- Estrutura do rest:
+		
+		Requisição HTTP
+	CLIENT   ----------------------------------->   SERVIDOR
+	              < -----------------------------------
+		Retorna um código de operação
+		Retorna uam mensagem
+
+- API (Application Programming Interface), são conjuntos de rotinas documentadas e disponibilizadas por uma aplicação para que outras aplicações possam consumir suas
+funcionalidades
+
+- Métodos HTTP:
+
+	- GET: solicita a representação de um recurso.
+
+	- POST: solicita a criação de um recurso.
+
+	- DELETE: solicita a exclusão de um recurso.
+
+	- PUT: solicita a atualização de um recurso.
+
+- JSON (Javascript Object Notation), é uma formatação leve que tem uma estrutura de chave e valor e listas ordenadas.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Códido de estado, são códigos que representam o estado da operação solicitada pelo cliente.
+
+	- 1xx = informativo
+
+	- 2xx = sucesso
+	
+	- 3xx = redirecionamento
+
+	- 4xx = erro do cliente
+
+	- 5xx = erro dos ervidor
