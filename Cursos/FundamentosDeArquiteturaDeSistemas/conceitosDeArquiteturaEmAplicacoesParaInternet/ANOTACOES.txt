@@ -1,0 +1,71 @@
+AULA 1
+
+- Tipos de arquitetura:
+
+	- Monilito: seria uma unica aplicação que faz todo o acesso e processo com outros sistemas, onde é possível que uma única aplicação apresente várias instancias,
+	sendo que se não houver muita demanda é possível deixar apenas uma instancia no ar que teria as mesmas funcionalidades das outras.
+
+	- Microserviços 1: nesta arquitetura é possível ter varios serviços diferente do monolito, e cada serviço é possui um molde que pode ser comparado a um monolito,
+	que seria o nodo, e no nodo é possível ter várias instancias. Cada serviço pode chamar um ao outro para que o sistema funcione. Lembrando também que o
+	serviço não precisa estar exposto para o cliente usar, pode ser interno para uso do sistema.
+
+		- É preciso tomar cuidado nesta arquitetura, pois quanto mais serviços o sistema apresentar, será necessário maior organização para conseguir monitorar
+		as ligações entre eles.
+
+	- Microserviços 2: nesta arquitetura ainda apresenta os conceitos de vários serviços e nodos, porém os serviços não são interligados, são ligados por meio do
+	Message Broker, onde todos os serviços são ligado a ele, a vantagem é que quando um serviço está fora do ar e outro precisa do serviço, o serviço não quebrará
+	mais, pois o message broker receberá uma menssagem e quando o outro serviço estiver ativo ele receberá a menssagem do Message Broker e executará.
+
+		- É preciso tomar cuidado nesta arquitetura, pois o sistema está todo ligado no Message Broker.
+
+	- Microserviços 3: nesta arquitetura ainda apresenta os conceitos de vários serviços e nodos, os serviços também não são interligados, porém quando o proxy
+	cebe uma requisição ele redireciona para um gerenciador de pipeline e cada serviço possui uma função específica. E os serviços podem ser ligados pelo gerenciador
+	
+		- É preciso ter cuidado com o gerenciador de pipeline, pois quando um serviço está fora do ar, o gerenciador precisa voltar ao serviço anterior e reverter
+		o que foi feito.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- Pros e contras do monolito:
+
+	Pros				Contra
+	
+	- baixa complexidade		- Stack única
+	- monitoramento simplificado	- Compartilhamento de recursos
+					- Acoplamento
+					- Mais complexos a escalabilidade
+
+- Pros e contras do microserviços 1:
+
+	Pros				Contra
+	- stack dinamica			- acoplamento
+	- simples escalabilidade		- monitoramento mais complexo
+					- provisionamento mais complexo
+
+- Pros e contras do microserviço 2:
+
+	Pros				Contra 
+
+	- stack dinâmica			- Monitoramento mais complexo
+	- simples escalabilidade		- Provisionamento mais complexo
+	- desacoplamento
+
+- Pros e contras do microserviços 3:
+
+	Pros				Contra
+	
+	- stack dinâmica			- provisionamento mais complexos
+	- simples escalabilidade		- plataforma inteira depende do gerenciador de pipeline.
+	- desacoplamento
+	- menor complexidade
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- Nos processos assincronos, mostrados no microserviço 2, quando ocorre um erro em um dos serviços o outro serviço que mando a mensagem não estará esperando o 
+erro retornar, e então o erro ficará isolado, para solucionar isso é necessário implementar o Dead letter queue, que seria re-tentativas de processar aquela mensagem
+pelo serviço.
+
