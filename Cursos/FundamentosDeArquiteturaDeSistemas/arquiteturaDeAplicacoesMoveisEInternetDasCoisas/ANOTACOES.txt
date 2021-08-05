@@ -1,0 +1,99 @@
+AULA 1
+
+- A internet é uma rede conectada entre pessoas.
+
+- A internet das coisas, seriam objetos que aproveitam a rede mundial para a troca de dados.
+
+- Por que conectar as coisas?
+	- Colocar sensores nos objetos.
+
+	- Coletar os dados.
+	
+	- Usar os dados para tomadas de decisão.
+
+- Conceitos básicos de IoT:
+
+	- Things: são os objetos para coletar os dados.
+	
+	- Cloud: local de processamento e hospedagem dos dados.
+
+	- Intelligence: Usar os dados para as tomadas de decisão e resolução de problemas.
+
+- Computação Ubígua é quando a tecnologia começa a se tornar um plano de fundo, pois se torna muito importante para as
+nossas vidas.
+
+- Alguns desafios da IoT:
+
+	- Privacidade e segurança
+	- Grande quantidade de dispositivos na rede.
+	- Capacidade de armazenar e processar uma grande quantidade de informações.
+	- Gerar valor nos dados coletados.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- Atributos que se devem considerar na escolha de como coletar os dados:
+
+	- baixo consumo de energia
+
+	- rede de dados limitado
+
+	- resiliencia
+	
+	- segurança
+
+	- customização
+
+	- baixo custo
+ 
+- Um dos protocolos mais conhecidos em IoT é o MQTT. É um protocolo onde muitos dispositivos de diferentes implementações
+conseguem seguir um linha única.
+
+	- base na pilha TCP/IP.
+
+	- protocolo de mensagem assincrono.
+
+- O modelo do MQTT é o modelo publish/subscriber, onde existe uma separação entre quem fornece a mensagem e quem a
+consome.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- estrutura da mensagem para a publish(MQTT) :
+	
+	- protocolo :// broker(endereço) / user / sensor / tipo de informação
+
+- o subscriber é a capacidade de um client MQTT conectar um broker e ouvir um tópico.
+
+- O MQTT oferece um garantia de que esse protocolo funcione, e para isso existem niveis de qualidade de serviço. Chamado
+de QoS.
+
+	- São três niveis:
+
+		- Nível 0: 
+			- menor esforço
+		
+			- sem garantia de entrega
+
+			- mensagem não é retransmitida
+
+		- Nível 1:
+
+			- garante que a mensagem foi entregue pelo menos uma vez.
+
+			- a mensagem pode ser retransmitida caso não haja confirmação da entraga.
+
+		- Nível 2:
+	
+			- garante que a mensagem foi entregue pelo menos uma vez.
+
+			- a mensagem pode ser retransmitida caso não haja confirmação da entraga.		
+
+			- existe uma confirmação no lado do client que recebeu a mensagem de confirmação do broker,
+			com isso o broker remove a publicação do local armazenado e envia uma mensagem de conclusão
+			da comunicação.
+
+
+
