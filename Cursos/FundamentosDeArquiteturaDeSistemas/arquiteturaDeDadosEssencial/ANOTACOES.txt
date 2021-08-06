@@ -1,0 +1,93 @@
+AULA 1 
+
+- Valores são conjuntos de valores e ocorrências.
+
+- Os dados são importantes pois com eles é possível criar informações e posteriormente se torna conhecimento.
+
+- Um conjunto de dados precisa de um modelo sustentavel que possue as seguintes características:
+
+	- Estruturação, durabilidade, velocidade, controle de acesso e isolamento.
+
+- E para gerenciar o modelo sustentavel é necessário um outro modelo de gerenciamento, os bancos de dados.
+Que permitem gerenciar os dados, apresentando mais controle sobre eles.
+
+- A estrutura dos SGBS é:
+
+	- A linguagem de definição
+
+	- A linguagem de manipulação
+
+	- Dicionário de dados
+
+- Um dos primeiros modelos de banco de dados é o hierárquico.
+
+- O modelo mais usado no mercado é o relacional
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- O modelo relacional trabalha com entidade (tabelas), e cada linha é chamado de registros ou tuplas.
+
+- As colunas que criam ligação entre as entidades é chamada de chave primaria ou chave estrangeira.
+
+- O MER é um modelo conceitual do modelo entidade relacinamento. Para representar graficamente existe o DER, que é o
+diagrama entidade relacionamento.
+
+- No DER existem as entidades fortes, que são as entiades que não dependem da outra para existir. Também existem as
+entidades fracas que são aquelas que dependem de outra para existir.
+
+- Quando existe um relacionamento de M para N é necessário apresentar um entidade associativa.
+
+- O processo de aplicar uma quebra usando uma entidade associativa é chamado de normalização. São 5 formas normais.
+
+	- A primeira normalização seria a correção de erros nos registros para valores únicos em cada registro.
+
+	- A segunda forma normal compreende em corrigir os valores digitados erroneamente.
+
+	- A terceira forma normal seria a correção de colunas que não são dependentes das chaves.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- SQL tem como base três pilares:
+
+	- DDL: são comandos usados para estruturar o banco.
+
+	- DML: são os comando responsáveis pela manipulação nos dados.
+
+	- DQL: sãos comandos usados para a consulta dos dados.
+
+- O index é uma tabela secundaria extraida da tabela principal com as colunas que deseja ordenar. Mas existe um problema na
+indexação que seria relacionado com os comandos DML, pois quando um registro é apagado, atualizado ou colocado, os
+index também precisaram ser atualizados.	
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 4
+
+- Transações são operações isoladas com começo, resolução e fim.
+
+	- começo: DML e QML
+	
+	- resolução: commit e rollback
+
+	- fim: novos dados.
+
+- As transações trabalham com o contexto ACID:
+
+	- Atomicidade: todas as operações devem ter sucesso. Utilizando o commit ou o rollback.
+
+	- Consistência: as regras que controlam os bancos de dados nao podem ser inflingidas.
+
+	- Isolamento: várias transações podem acessar simultaneamente o mesmo registro.
+
+	- Durabilidade: após o commit as alterações devem ser aplicadas, independente da circunstância apresentada.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 5
+
+- Exemplos de SGBDRs: Oracle, Mirosoft SQL Server, IBM DB2, PostgreSQL, MySQL, SQLite, etc.
+
