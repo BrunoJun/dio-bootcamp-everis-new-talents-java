@@ -1,0 +1,28 @@
+AULA 1 
+
+- A arquitetura de mensageria permite que serviços não necessitem estar conectado com o ambiente externo.
+
+- Pros e contras de se usar a arquitetura de mensageria:
+
+	Pros				Contras
+
+	- Desacoplamento			- Único ponto de falha
+	- Facil plug and play			- Dificil monitoramento
+	- Comunicação assincrona
+	- Simples escalabilidade
+	- Broadcasting
+	- Permite event source (fila de eventos)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- Um dos problemas dos serviços assincronos é o dificil monitoramento do fluxo de uma requisição. Quando um serviço da erro
+a mensagem pode ser executada novamente usando a solução de Dead letter queue, onde a mensagem será colocada em
+uma fila para ser reexecutada posteriormente.
+
+- Um jeito de resolver o problema do rastreamento de fluxo é centralizar os logs gerados em todos os serviços durante a
+operação e depois colocar um atributo em todos os logs que seria um metadata para identificar o fluxo.
+
+
+
