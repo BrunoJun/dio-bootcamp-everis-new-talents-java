@@ -1,0 +1,44 @@
+AULA 1
+
+- BI (Business Intelligence), seria basicamente um ambiente composto por ferramentas, infraestrutura, profissionais e dados,
+que tem como objetivo principal a tomada de decisões nos negócios.
+
+- Os dados usados em BI, podem vir dos próprios SGBDs da empresa, pesquisas de campo ou dados gerenciais ou indicadores
+de mercado.
+
+- Uma solução completa de BI é composta pela infraestrutura, gerenciamento de dados, ferramentas analiticas dos dados,
+compartilhamento dos dados e ferramentas gerais (ex.: controle de acesso).
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- Data Warehouse é uma modelagem de dados que comporta os dados de forma que seja eficiente para aplica no BI.
+
+- Existem dois tipos de modelo usados nas Warehouse:
+
+	- OLTP(On-line Transaction Processing): atende muitos usuários, dados voláteis.
+
+	- OLAP(On-line Analytical Processing): atende poucos usuários, dados poucos voláteis.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3 
+
+- Big Data são grandes volumes de dados estruturados, não estruturados e semi-estruturados.
+
+- Os dados podem ser dos mais diversos formatos desde imagens, nuvens, emails, videos, etc.
+
+- Os dados estruturados seguem regras no modelo proposto.
+
+- Os dados semi-estruturados seguem algumas regras basicas, porém é possível mudar as informações.
+
+	- Os bancos de dados que podem comportar estes tipos de dados são os NoSQL ou Not Only SQL.
+
+- Os dados não estruturados podem ser considerados uma coleção de dados estruturados e semi-estruturados.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 4
+
+- Data Lake se assemelha muito com o Big Data, porém ele possui manutenção e transformações sobre os dados armazenados.
