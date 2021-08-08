@@ -1,0 +1,40 @@
+AULA 1
+
+- Cloud Computing é um serviço que faz o gerenciamento de hardware e software
+
+- As pequenas empresas buscam as grandes empresas que oferecem serviços de cloud computing para baratear os custos.
+As grandes oferencem podem oferecer provedores e armazenamento.
+
+- Uma das características do cloud computing é pague o que consumir.
+
+- Existem três tipos de serviços em nuvem:
+
+	- IaaS (Infrastructure as a service): possibilidade de usar máquinas externas para colocar em produção as aplicações.
+
+	- PaaS (Plataform as a service): além das máquinas oferece a possibilidade de automatizar as aplicações e criar as
+	infraestruturas.
+
+	- BaaS (Backend as a service): oferece serviços backend para a criação de implementações mobile e frontend.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- questões de disponibilidade para cada tipo de serviço em nuvem:
+
+	- IaaS: não é necessário se preocupar com hardware, manutenção do ambiente físico e internet.
+	
+	- PaaS: com a garantia da disponibildade é possível criar um sistema auto escalável para a aplicação.
+
+	- BaaS: desenvolvedor mobile ou front-end não há preocupação de desenvolver a parte de backend.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- Servless garante que não é necessário cuidar do servidor.
+
+- O servless não é um serviço rodando, mas ele executa um código de acordo com um evento que dispara um código e pode
+dispara outros serviços que faram a execução da aplicação.
+
+- Existem desvantagens de se usar o servless, por exemplo, o custo é alto e limite de tempo para a execução de uma lambda.
