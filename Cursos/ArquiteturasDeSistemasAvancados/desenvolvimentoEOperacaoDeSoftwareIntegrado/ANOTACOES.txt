@@ -1,0 +1,45 @@
+AULA 1
+
+- O ambiente de desenvolvimento tinha três grandes áreas separadas, desenvolvimento, garantia de qualidade e operações.
+Porém o DevOps estabeleceu a união das áreas.
+
+- DevOps é um termo criado para o conjunto de práticas que integram e automatiza os processos entre as equipes de apoio,
+desenvolvimento e operações para a produção rápida e confiável de software. Criando uma cultura de colaboração entre as
+equipes
+
+- DevOps resolve problemas humanos.
+
+- Existem três caminhos que devem ser seguidos para a entrega:
+
+	- Flow (fluxo): a otimização do fluxo visa eliminar os desperdicios, gargalos no processo, transferência de
+	responsabilidade e tempo de espera, para conseguir seguir este caminho é necessário aplicar metodologicas ageis
+	e automatizar processos do desenvolvimento até a entrega.
+
+	- Feedback: os ciclos de feedbacks visam resolver problemas o quanto antes, e para isso a chave é o monitoramento
+	onde possa ser gerando informações.
+
+	- Learning: o aprendizado contínuo, visa gerar conhecimento atravez da experimentação.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- A integração continua é composta por diversas etapas para o desenvolvimento, como a criação dos teste unitários, analise da
+qualidade do cógido ou a criação da release.
+
+- A implantação continua consiste em fazer o deploy automaticamente e assim ir para o ambiente de aplicação.
+
+- A entrega contínua envolve uma aprovação de alguém para o deploy.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- As três principais ferramentas que existem no mercado para a analise de qualidade são:
+
+	- sonarqube
+	- Code climate
+	- codacy
+
+- Essas ferramentas elas verificam a complexidade ciclomática do código, ou seja, elas verificam quantas ramificações um
+trecho do pragrama apresenta.
