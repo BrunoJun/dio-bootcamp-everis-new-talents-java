@@ -1,0 +1,54 @@
+AULA 1
+
+- Um banco de dados armazena dados de forma estruturada, tornando o acesso e atualização dos dados mais rápidas, pois
+aumenta a eficiência computacional.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- JDBC é uma API com diversas classes e interfaces escritas na linguagem Java que estão presentes nos pacotes java.sql e
+javax.sql, permitem que os programas criem conexões com os bancos de dados para realizar consultas.
+
+- A classe drive do java.sql auxilia o desenvolvedor a apenas escolher os driver de um banco de dados, sem precisar alterar
+outros recursos para a troca de banco.
+
+- A classe DriverManager é responsável pela comunicação com os drivers. Cria uma Connection com o banco de dados
+através de um URL.
+
+- A interface Connection representa aconexão com o banco de dados, permitindo criar Statements que criam as consultas
+SQL.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- Existem 3 interfaces para fazer as consultas com o SQL:
+
+	- Statement: executa comandos SQL.
+
+	- PreparedStatement: executa SQL parametraveis.
+
+	- CallableStatement: executa stored procedures.
+
+- Pontos para preferir usar o PreparedStatement do que o Statement:
+
+	- Previne SQL injection.
+	- Melhora a legibilidade.
+	- Melhora o desempenho.
+
+- O PreparedStatement possui três metodos para executar o comandos SQL:
+
+	- execute: executa qualquer tipo de comando SQL.
+
+	- executeQuery: executa comandos "SELECT".
+
+	- executeUpdate: executa comandos de alteração de banco de dados, como, INSERT, UPDATE, DELETE, CREATE
+	e ALTER.
+
+- o ResultSet é o objeto que contem os dados de uma consulta.
+
+- São utilizados métodos getters para pegar os dados do ResultSet.
+
+- o método next() percorrer o próximo resultado do ResultSet.
+
