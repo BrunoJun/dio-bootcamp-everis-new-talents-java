@@ -1,0 +1,95 @@
+AULA 1
+
+- Antes do JPA os desenvolvedores tinham dois problemas ao usar o JDBC:
+
+	1º: Muito tempo gasto pensando nas queries.
+
+	2º: Os desenvolvedores precisavam em dois paradigmas ao mesmo tempo, o paradigma orientado a objetos e o
+	paradigma do esquema entidade relacionamento.
+
+- Para resolver os dois problemas foi proposto o ORM (Mapeamento Objeto Relacional) que demonstra as tabelas de um banco
+de dados relacional através das classes Java.
+
+- Para padronizar as interfaces das implementações ORM foi criada a JPA (Java Persintence API), onde descreve o
+comportamento dos frameworks Java ORM.
+
+- Lembrando que a JPA não implementa nada, apenas oferece as interfaces, classes e anotações, que estão presentes na
+classe java.persistence.
+
+- A anotação mais importante para fazer o mapeamento das classes é o @Entity, onde os objetos da classe serão persistidos no
+banco de dados.
+
+- Existem outras anotações que são muito usadas:
+
+	- @id: que especifica a entidade única. E é obrigatória.
+
+	- @GeneratedValue: que mostra qual é a estratégia para a criação dos valores.
+	
+	- @Column: representa a uma coluna equivalente na tabela no banco de dados.
+
+- Existem também as anotações de relacionamento, como, @ManyToMany, @ManyToOne, @OneToMany e @OneToOne,
+seria as relações entre as classes ou as relações entre tabelas (através das chaves estrangeiras).
+	
+- Nas anotações de relacionamento, a propriedade fetch, possui alguns valores para usar:
+
+	- eager: seria quando aquele atributo seria carregado, quando chamado o objeto.
+
+	- lazy: seria quando aquele atributo não carregasse até quando fosse chamado, por exemplo com um getter.
+
+- A interface entityManager seria o gerenciador do ciclo de vidas da tabela, onde ele utiliza metodo como: 
+
+	-find: retorna entidade através da chave primária.
+
+	-persist: adiciona a entidade no banco.
+
+	-remove: Apaga a entidade no banco de dados.
+
+- Para persistir uma entidade é necessário que inicie uma transação, é necessário utilizar o método .getTransaction() do
+entityManager.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 2
+
+- O Hibernete já existia antes do JPA.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 3
+
+- O JPQL (Java Persistence Query Language) é uma linguagem de consulta independente orientada a objetos definida pelo
+JPA
+
+- O JPQL é usado para realizar consultas no banco de dados. É inspirado no SQL porém ele interage diretamente com o banco
+de dados através das entidades do JPA. Com a linguagem é possível usar conceitos da orientação a objetos para fazer as
+consultas no banco.
+
+- Algumas vantagens de se usar o JPQL para as consultas do que o entityManager:
+
+	1º: Possibilidade de fazer consultas, remoção e atualização em massa.
+
+	2º: Consultas mais complexas.
+
+	3º: Realizar funções de agregação.
+
+- Algumas vantagens de se usar o JPQL do que o SQL:
+
+	1º: Não é necessário usar os joins explicitamente, os joins são criados automaticamente durante as consultas.
+
+	2º: O JPQL utiliza as funcionalidades de carregamento lazy/eaguer nos relacionamentos entre as entidades.
+
+	3º: As consultas podem ser armazenadas em cache para uma mehlor performance.
+
+- Existem outras linguagems de consulta orientada a objetos, por exemplo, HQL e o EQL.
+
+- Existe uma outra alternativa para consultas JPQL que é o JPA Criteria API. O JPQL possui um problema que as consultas são
+verificas apenas no momento da execução, enquanto no JPQ Criteria API detecta erros durante a compilação.
+
+- Porém o JPA Criteria API é mais complicado de se usar do que o JPQL, então para consultas estática é preferível o uso do
+JPQL, enquanto para consultas dinâmicas é preferível o uso do JPA Criteria API.
+
+- Ambos possuem a mesma eficiência.
+
+- O JPA Criteria API utiliza o JPA Metamodel para referenciar os atributos da entidade
+
+
