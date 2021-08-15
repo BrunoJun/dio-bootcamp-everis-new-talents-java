@@ -1,0 +1,44 @@
+AULA 1.1
+
+- A principal característica do microsserviço é a autonomia entre os serviços.
+
+- Os serviços separados permite a escalabilidade individual de cada serviço.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.2
+
+- O spring foi criado como um meio para realizar a interdependencia dos serviços, para facilitar a refatoração dos códigos.
+O Spring realiza por meio da inversão de controle.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.5
+
+- Cada microserviço precisa ser colocado em portas diferentes.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.6
+
+- Uma parte importante da arquitetura de microserviços é o Config Server, que seria quando parte das configurações possuem 
+informações sensiveis e que precisam ser colocados em um local externo as serviços.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.7
+
+- Outro componente importante da arquitetura de microserviços é o Service Discovery que auxilia na comunicação entre
+serviços, onde um serviço que precisa se comunciar com outro em vez de acessar diretamente pela porta do outro serviço,
+primeiro irá consultar o Service Discovery que dará a porta para o serviço que deseja se comunicar com o outro.
+
+- Outra funçaõ que o Service Discovery possui é de Load balancer.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.9
+
+- O Gateway é um componente da arquitetura que ajuda na comunicação do frontend com os microserviços.
+
+
+
