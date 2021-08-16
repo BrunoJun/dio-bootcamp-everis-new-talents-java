@@ -1,0 +1,98 @@
+AULA 1.1
+
+- Os usuários nos ultimos anos se tornou mais exigente, consequentemente as empresas começaram a colocar como uma
+das pautas principais a satisfação ao usuário, crescendo assim a área de QA(Quality Assurance).
+
+- Teste de software faz parte do ciclo de vida de um software, pois ele avalia a qualidade e evita possíveis falhas quando está
+em operação.
+
+- Fazer os teste durante a fase de desenvolvimento custo muito menos do que achar uma falha durante a operação.
+
+- Principios de testes de software:
+
+	- Teste apresenta os defeitos e não a ausência.
+
+	- Testes exaustivos são impossíveis.
+
+	- Teste inicial economiza tempo e dinheiro.
+
+	- Ausência de erros é ilusão.
+
+	- Teste depende do contexto.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.2
+
+- Existe um processo (ciclo) para os teste:
+
+	Planejar -> Projetar -> Executar -> Entregar -> Planejar ...
+
+	- Planejar: 
+
+		- Passos:
+		
+			leitura de requisitos -> levantamento de dúvidas -> ideias de teste -> estimativa
+
+	- Projetar (casos de teste manuais ou automatizados):
+
+		-Tópicos importantes durante esta fase: 
+
+			- Nome/titulo
+			- Objetivo
+			- Pré-condições
+			- Passo a passo
+			- Resultado esperado
+
+	- Executar:
+
+		- Perguntas importantes:
+
+			- Ambiente está atualizado?
+			- Tenho todos os acessos necessários?
+			- Preciso de alguma massa de teste?	
+
+		- É preciso ter as evidências dos erros encontrados.	
+
+		- É preciso ter as evidências do sucesso também.
+
+	- Entregar:
+
+		- Documentação
+		- Status report
+		- Evidencias de erros e sucessos.			
+
+- Testes estáticos são os teste feitos antes de executar o sistema.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.3
+
+- Durante a fase de planejamento existem várias técnicas para criar casos de teste:
+
+	- Análise de valor limite: é um técnica que abrange os valores limites que o sistema pode executar.
+	Os valores testados podem ser o valor imediato antes do limite inferior, encima do próprio limite e imediatamente
+	depois do limite.
+
+	- Tabela de decisão: é utilizado em teste complexos, ela testa as condições do sistema (entradas do usuário) e ações
+	correspondentes. São dois parametros essenciais nesta técnica: Condição e Ação.
+
+	- Transições de estados: é uma técnica que documenta as transições entre diferentes estados em um sistema, por
+	exemplo, sistemas de pedido, onde apresenta a emissão, análise e o pagamento de um produto.
+
+	- Técnica de testes baseados na experiência: 
+	
+		- Suposições de erro: cria casos de testes de acordo com a experiência do profissional.
+
+		- Teste exploratorio: sem roteiro os profissionais procuram erros no sistema.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 1.4
+
+- Quando parar os testes?
+
+	- Pare quando apresenta uma confiança nos requisitos, quandos os critérios de encerramento forem atingidos ou
+	quandoos custos de identificação dos erros não compensam mais.
+		
+
