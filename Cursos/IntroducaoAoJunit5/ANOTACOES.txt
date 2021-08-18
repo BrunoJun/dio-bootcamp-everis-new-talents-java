@@ -1,0 +1,22 @@
+AULA 1.1
+
+- Um framework de testes é uma ferramenta que permite acelerar, facilitar ou organizar o processo de testes, normalmente no
+contexto de automatização. Alguns exemplos:
+
+	- JUnit
+	- TestNG
+	- Selenium
+	- e-FATHREE
+
+- Princípais benefícios de utilizar os framworks de testes:
+
+	- Maior eficiência.
+	- Maior velocidade na criação de testes.
+	- Menor custo de manutenção.
+	- Maior cobertura de testes.
+	- Reutilização de código.
+
+
+
+
+
