@@ -26,7 +26,7 @@ O repositório apresenta os códigos, anotações dos cursos e desafios apresent
 
 ## Status
 
-:white_mark_check: **Finalizado** :white_mark_check:
+:white_check_mark: **Finalizado** :white_check_mark:
 
 ****
 
